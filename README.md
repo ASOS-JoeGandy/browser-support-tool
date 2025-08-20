@@ -1,36 +1,125 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# JavaScript Browser Support Analyzer
+
+A powerful Next.js application that analyzes JavaScript code to determine browser compatibility and support. Simply paste your JavaScript code and get detailed insights about which browsers support the features you're using.
+
+## Features
+
+- 🔍 **Code Analysis**: Automatically detects JavaScript features in your code using Babel parser
+- 🌐 **Browser Support**: Shows compatibility across Chrome, Firefox, Safari, Edge, and Internet Explorer  
+- 📊 **Visual Results**: Clean, intuitive interface with browser support metrics
+- ⚡ **Real-time Analysis**: Instant feedback as you paste and analyze code
+- 📱 **Responsive Design**: Works perfectly on desktop and mobile devices
+
+## Supported JavaScript Features
+
+The analyzer detects and provides compatibility information for:
+
+- Arrow Functions
+- Const/Let Declarations  
+- Template Literals
+- Destructuring Assignment
+- Spread Operator
+- Async/Await
+- Promises
+- ES6 Classes
+- For...of Loops
+- Optional Chaining
+- Nullish Coalescing
+- Map and Set Objects
+- Symbols
+- And more...
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18+ 
+- npm, yarn, pnpm, or bun
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd browser-support-tool
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or 
+pnpm install
+# or
+bun install
+```
+
+3. Start the development server:
 ```bash
 npm run dev
 # or
 yarn dev
 # or
-pnpm dev
+pnpm dev  
 # or
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Paste Code**: Enter your JavaScript code in the left panel
+2. **Analyze**: Click "Analyze Browser Support" or press Ctrl+Enter
+3. **Review Results**: View detailed browser compatibility information in the right panel
+4. **Understand Support**: Check the color-coded support levels:
+   - 🟢 Green: Full support
+   - 🟡 Yellow: Partial support  
+   - 🔴 Red: No support
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/
+│   ├── components/
+│   │   ├── CodeInput.tsx          # Code input component
+│   │   └── BrowserSupportResult.tsx # Results display component
+│   ├── lib/
+│   │   └── analyzer.ts            # Code analysis logic
+│   ├── layout.tsx                 # Root layout
+│   ├── page.tsx                   # Main page
+│   └── globals.css                # Global styles
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technology Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Next.js 15**: React framework with App Router
+- **TypeScript**: Type-safe development
+- **Tailwind CSS**: Utility-first CSS framework
+- **Babel Parser**: JavaScript code parsing
+- **Babel Traverse**: AST traversal for feature detection
 
-## Deploy on Vercel
+## Building for Production
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run build
+npm start
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## Support
+
+If you encounter any issues or have questions, please open an issue on GitHub.
