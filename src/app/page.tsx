@@ -6,6 +6,7 @@ import CodeInput from './components/CodeInput';
 import BrowserSupportResult from './components/BrowserSupportResult';
 
 export default function Home() {
+  // Updated for GitHub Pages deployment fix
   const [code, setCode] = useState('');
   const [analysis, setAnalysis] = useState<AnalysisResult | null>(null);
   const [loading, setLoading] = useState(false);

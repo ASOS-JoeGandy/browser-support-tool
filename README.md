@@ -2,7 +2,7 @@
 
 # JavaScript Browser Support Analyzer
 
-[![Deploy to GitHub Pages](https://github.com/ASOS-JoeGandy/browser-support-tool/actions/workflows/deploy.yml/badge.svg)](https://github.com/ASOS-JoeGandy/browser-support-tool/actions/workflows/deploy.yml)
+[![Deploy to GitHub Pages](https://github.com/ASOS-JoeGandy/browser-support-tool/actions/workflows/nextjs.yml/badge.svg)](https://github.com/ASOS-JoeGandy/browser-support-tool/actions/workflows/nextjs.yml)
 [![Next.js](https://img.shields.io/badge/Next.js-15.5.0-black?logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
@@ -11,7 +11,7 @@ A powerful, comprehensive JavaScript browser compatibility analyzer that detects
 
 🌐 **[Live Demo on GitHub Pages](https://asos-joegandy.github.io/browser-support-tool/)**
 
-![Browser Support Analyzer Screenshot](https://via.placeholder.com/800x400/1a1a1a/ffffff?text=JavaScript+Browser+Support+Analyzer)
+![Browser Support Analyzer Screenshot](https://placehold.co/800x400/1a1a1a/ffffff?text=JavaScript+Browser+Support+Analyzer)
 
 ## ✨ Features
 
