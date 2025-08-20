@@ -1,5 +1,5 @@
 import { parse } from '@babel/parser';
-import traverse, { NodePath } from '@babel/traverse';
+import traverse from '@babel/traverse';
 import * as t from '@babel/types';
 
 interface CodeSnippet {
@@ -28,7 +28,7 @@ interface DetectedFeature extends FeatureSupport {
   codeSnippets: CodeSnippet[];
 }
 
-interface AnalysisResult {
+export interface AnalysisResult {
   features: DetectedFeature[];
   summary: {
     totalFeatures: number;
@@ -1415,7 +1415,7 @@ export async function analyzeCode(code: string): Promise<AnalysisResult> {
 
     // Traverse the AST to detect features
     traverse(ast, {
-      ArrowFunctionExpression(path: any) {
+      ArrowFunctionExpression(path) {
         addFeature('arrow-function', path.node.start, path.node.end);
         // Check for default parameters
         if (path.node.params.some(param => t.isAssignmentPattern(param))) {

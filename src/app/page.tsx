@@ -1,13 +1,13 @@
 'use client';
 
 import { useState } from 'react';
-import { analyzeCode } from './lib/analyzer';
+import { analyzeCode, type AnalysisResult } from './lib/analyzer';
 import CodeInput from './components/CodeInput';
 import BrowserSupportResult from './components/BrowserSupportResult';
 
 export default function Home() {
   const [code, setCode] = useState('');
-  const [analysis, setAnalysis] = useState<any | null>(null);
+  const [analysis, setAnalysis] = useState<AnalysisResult | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
