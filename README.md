@@ -2,32 +2,37 @@
 
 A powerful Next.js application that analyzes JavaScript code to determine browser compatibility and support. Simply paste your JavaScript code and get detailed insights about which browsers support the features you're using.
 
+🌐 **[Live Demo on GitHub Pages](https://asos-joegandy.github.io/browser-support-tool/)**
+
 ## Features
 
-- 🔍 **Code Analysis**: Automatically detects JavaScript features in your code using Babel parser
+- 🔍 **Comprehensive Analysis**: Detects 114+ JavaScript features using Babel parser
 - 🌐 **Browser Support**: Shows compatibility across Chrome, Firefox, Safari, Edge, and Internet Explorer  
-- 📊 **Visual Results**: Clean, intuitive interface with browser support metrics
+- 📊 **Categorized Results**: Features organized into 12 categories (Syntax, Methods, Web APIs, etc.)
 - ⚡ **Real-time Analysis**: Instant feedback as you paste and analyze code
+- 🌙 **Dark Mode**: Beautiful dark theme interface
 - 📱 **Responsive Design**: Works perfectly on desktop and mobile devices
+- 🚀 **Auto-deployment**: Automatically deploys to GitHub Pages on push
 
-## Supported JavaScript Features
+## Supported JavaScript Features (114+)
 
-The analyzer detects and provides compatibility information for:
+The analyzer detects and provides compatibility information across 12 categories:
 
-- Arrow Functions
-- Const/Let Declarations  
-- Template Literals
-- Destructuring Assignment
-- Spread Operator
-- Async/Await
-- Promises
-- ES6 Classes
-- For...of Loops
-- Optional Chaining
-- Nullish Coalescing
-- Map and Set Objects
-- Symbols
-- And more...
+### Core Language Features
+- **Syntax** (15): Arrow Functions, Classes, Template Literals, Destructuring, Spread Operator, etc.
+- **Methods** (32): Array/Object/String methods, including ES2024 features like `Array.fromAsync()`
+- **Async** (6): Async/Await, Promises, Top-level Await, Async Iteration
+- **Modules** (6): ES6 import/export, Dynamic Import, import.meta
+- **Advanced** (7): Optional Chaining, Nullish Coalescing, BigInt, etc.
+
+### Data & APIs
+- **Data Structures** (13): Map, Set, WeakMap, Proxy, Reflect, SharedArrayBuffer, etc.
+- **Web APIs** (12): fetch(), URLSearchParams, Storage APIs, Observers, Crypto APIs
+- **RegExp** (6): Named groups, lookbehind, Unicode properties, v flag
+- **Intl** (2): Internationalization APIs
+- **Error** (2): Error.cause, AggregateError
+- **Concurrency** (2): Atomics, SharedArrayBuffer
+- **Experimental** (3): Temporal API, Decorators, Iterator Helpers
 
 ## Getting Started
 
@@ -107,6 +112,28 @@ src/
 npm run build
 npm start
 ```
+
+## Deployment
+
+This project is configured for automatic deployment to GitHub Pages:
+
+- **Automatic Deployment**: Every push to the `main` branch triggers a GitHub Actions workflow
+- **Static Export**: Next.js exports a static site to the `out` directory
+- **GitHub Pages**: The site is automatically published to `https://asos-joegandy.github.io/browser-support-tool/`
+
+### Manual Deployment Setup
+
+To set up GitHub Pages for your own fork:
+
+1. Go to your repository's Settings → Pages
+2. Set Source to "GitHub Actions"
+3. Push to the `main` branch to trigger deployment
+
+The GitHub Actions workflow (`.github/workflows/deploy.yml`) handles:
+- Installing dependencies
+- Building the Next.js application
+- Exporting static files
+- Deploying to GitHub Pages
 
 ## Contributing
 

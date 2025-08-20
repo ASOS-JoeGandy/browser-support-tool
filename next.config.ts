@@ -10,6 +10,11 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: '/Users/joe.gandy/projects/browser-support-tool',
   },
+  output: 'export',
+  trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
