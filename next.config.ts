@@ -7,9 +7,6 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  turbopack: {
-    root: '/Users/joe.gandy/projects/browser-support-tool',
-  },
   output: 'export',
   trailingSlash: true,
   images: {
